@@ -1,3 +1,7 @@
+export const customImage = {
+  img1: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/cactus.jpeg',
+  car: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/car.jpeg'
+}
 export const featuredPortfolio = [
     {
       id: 1,
