@@ -4,13 +4,24 @@ import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const textRef = useRef();
+  const solarRef = useRef();
+  const windRef = useRef();
 
   useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed:60,
-      strings: ["Software Engineer", "Designer", "Artist"],
+    init(solarRef.current, {
+      showCursor: false,
+      loop:false,
+      // backDelay: 1500,
+      // backSpeed:60,
+      strings: ["Solar Panel"],
+    });
+  }, []);
+
+  useEffect(() => {
+    init(windRef.current, {
+      showCursor: false,
+      loop:false,
+      strings: ["Wind Turbine"],
     });
   }, []);
 
@@ -23,11 +34,11 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Tomi Lui</h1>
-          <h3>
-            Freelance <span ref={textRef}></span>
-          </h3>
+          <h1>Green Energy Technologies LTD</h1>
+          <h2>Renewable Technology Specializations:</h2>
+          <h3><span ref={solarRef}></span></h3>
+          <h3><span ref={windRef}></span></h3>
+
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />

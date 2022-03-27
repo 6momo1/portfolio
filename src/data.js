@@ -2,6 +2,40 @@ export const customImage = {
   img1: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/cactus.jpeg',
   car: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/car.jpeg'
 }
+
+export const aboutData = {
+  h1Data: 'About Us:',
+  pData: 'Green Energy Technology Ltd. specializes in the production of solar-system energy kits, wind turbine generated energy and other professional renewable energy products. Green Energy Technology Ltd. has been recognized by the industry for its integrity, reliability, and product quality. '
+}
+
+export const solarPanelData = {
+  h1Data: 'Product: Solar Panel',
+  pData: 'Solar panelll',
+  imgData: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/panel.jpg'
+}
+
+export const lightData = {
+  h1Data: 'Product: Solar Panel Street Ligthts',
+  pData: 'lights',
+  imgData: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/light.webp'
+}
+
+export const historyData = {
+  h1Data: 'Our History:',
+  pData: '10+ years insist on using Japan IGBT module and Germany thyristor.\n 10+years of government cooperation experience.' 
+}
+
+export const windData = {
+  h1Data: 'Wind Turbine',
+  pData: 'All Sizes',
+  imgData: 'https://react-tomi-lui.s3.us-west-2.amazonaws.com/wind.jpeg'
+}
+
+export const achivementData = {
+  h1Data: 'Achievements:',
+  pData: 'The products are sold to more than countries, municipalities, and autonomous regions across the country, and are widely used in many projects in my country. The solar lighting systems developed by us are also exported to oversea markets such as the Middle East, Africa, Europe, and the United States. The company has perfect production ability and innovative product development ability, strict management system, advanced production technology, and comprehensive quality assurance system, which provides sufficient guarantee for products.'
+
+}
 export const featuredPortfolio = [
     {
       id: 1,
