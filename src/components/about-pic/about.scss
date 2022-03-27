@@ -1,22 +1,7 @@
 @import "../../global.scss";
 
 ul.a {
-  // margin-top: 60px;
   list-style-type: circle;
-}
-
-.list {
-  flex-direction: column;
-  font-size: 20px;
-  text-align: left;
-  // padding: 20px;
-  // margin: 20px;
-}
-
-li {
-
-  margin-left: 30px;
-  margin-right: 5px;
 }
 
 .portfolio {
@@ -28,8 +13,7 @@ li {
   align-items: center;
 
   h1 {
-    text-align: center;
-    padding: 40px;
+    padding: 50px;
     font-size: 50px;
 
     @include mobile{
@@ -44,6 +28,7 @@ li {
     margin: 4px;
     padding:6px;
     border-radius: 10px;
+
   }
 
   img {
@@ -53,22 +38,21 @@ li {
     width: 40vh;
 
     @include mobile {
-  // display:none    
+  display:none    
 }
 
     // width: 70%;
   }
   .textContainer {
     display:column;
-    flex-direction: column;
+    flex-direction: row;
     // margin-top: 30px;
     // padding-top: 30px;
     padding: 0;
     background-color: transparent;
-    align-items:center;
+    // align-items:center;
     // justify-content:space-between;
-    text-align: center;
-    justify-content:center;
+    // justify-content:center;
     width: 100%;
     max-width: 110vh;
 
@@ -81,12 +65,11 @@ li {
   
   .paragraph {
     margin: 15px;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     // justify-content: center;
     // justify-items: left;
-    width: 100%;
+    width: 70%;
 
     @include mobile {
       flex-direction: column;

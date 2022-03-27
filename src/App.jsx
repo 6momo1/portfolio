@@ -8,7 +8,7 @@ import "./app.scss"
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
 import Info from "./components/about/Info";
-import {historyData, aboutData, achivementData, lightData, solarPanelData, windData } from "./data";
+import {historyData, aboutData, achivementData, lightData, solarPanelData, windData,somaliaJumpstartData, productData, somaliaData } from "./data";
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
@@ -18,15 +18,20 @@ function App() {
      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
      <div className="sections">
        <Intro/>
-       <Info pData={aboutData.pData} h1Data={aboutData.h1Data} />
-       <Info pData={solarPanelData.pData} h1Data={solarPanelData.h1Data} imgData={solarPanelData.imgData}/>
-       <Info pData={windData.pData} h1Data={windData.h1Data} imgData={windData.imgData}/>
-       <Info pData={lightData.pData} h1Data={lightData.h1Data} imgData={lightData.imgData}/>
-       <Info pData={historyData.pData} h1Data={historyData.h1Data} />
-       <Info pData={achivementData.pData} h1Data={achivementData.h1Data} />
-       <Portfolio/>
-       <Works/>
-       <Testimonials/>
+       <Info {...aboutData} />
+
+       <Info pData={productData.pData} bullets={productData.bullets} h1Data={productData.h1Data} />
+
+       <Info {...somaliaData} />
+       <Info {...somaliaJumpstartData} />
+
+       <Info {...solarPanelData}/>
+       <Info {...windData}/>
+       <Info {...lightData}/>
+       <Info {...achivementData}/>
+       {/* <Portfolio/> */}
+       {/* <Works/> */}
+       {/* <Testimonials/> */}
        <Contact/>
      </div>
     </div>
